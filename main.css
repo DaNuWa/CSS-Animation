@@ -1,0 +1,53 @@
+body
+{
+    background: #333;
+}
+
+.box
+{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes animation
+{
+    0%
+    {
+        background-color: #fff;/* in 0% these things happen*/
+    
+    }
+    25%
+    {
+        background-color: red;
+        border-radius: 0 25% 0 0;
+        left: 150px;
+    }
+
+    50%
+    {
+        background-color: blue;
+        border-radius: 20%  20%  20%  20%;
+        left: 150px;
+        top: 150px;
+    }
+    
+    75%
+    {
+        background-color:yellow;
+        border-radius: 20%  20%  20%  20%;
+        left: 0;
+        top: 150px;
+    }
+    100%
+    {
+        background-color: tomato ;/*At 100% these things happen*/
+        left: 0;
+        top: 0;
+
+    }
+}
